@@ -1,0 +1,135 @@
+.descriptionbox {
+    margin: 75px 122px;
+}
+
+.descriptionbox-navigator {
+    display: flex;
+}
+
+.descriptionbox-nav-box {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.descriptionbox-nav-box:hover {
+    color: #333;
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+.selectedTab {
+    background-color: #ff4141;
+    color: white;
+    border-color: #ff4141;
+    font-weight: bold;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+}
+
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 40px;
+    padding-bottom: 70px;
+}
+
+.descriptionbox-description h2 {
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 40px;
+}
+
+.review-header span {
+    color: gray;
+    font-size: 13px;
+}
+
+.review-text {
+    margin-top: 10px;
+}
+
+.rating {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #e9711c;
+}
+
+.review-form h3 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.review-form textarea {
+    width: 88%;
+    height: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    outline: none;
+}
+
+.review-form-inputs {
+    margin-bottom: 20px;
+}
+
+.review-form-inputs input {
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.review-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.review-form button {
+    margin-top: 16px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    display: block;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.review-form button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .descriptionbox {
+        margin: 50px 26px;
+    }
+}
+
+@media (max-width: 420px) {
+    .review-form-inputs input {
+        width: 88%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
